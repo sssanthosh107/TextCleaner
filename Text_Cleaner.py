@@ -25,7 +25,7 @@ elif input_option=="2":
         
 #input_string="""20 The English Wikipedia is the English-language edition of the free online encyclopedia Wikipedia. Founded on 15 January 2001, it is the first edition of Wikipedia and, as of April 2019, has the most articles of any edition.[2] As of September 2020, 11% of articles in all Wikipedias belong to the English-language edition. This share has gradually declined from more than 50 percent in 2003, due to the growth of Wikipedias in other languages.[3] As of 9 September 2020, there are 6,155,427 999 0987 articles and &&**21230000))((&&@#*$&))"""
 
-input_string=re.sub('[^A-Za-z0-9\s.]+', ' ', input_string)
+input_string=re.sub('[^A-Za-z0-9\s.{]}+|', ' ', input_string)
 word_list=input_string.split(" ")
 
 print("Input String:\n\n",input_string)
